@@ -13,6 +13,11 @@ de dist:
 texto_analyzer-1.0.0-py3-none-any.whl 
 texto_analyzer-1.0.0.tar.gz
 
+Para instalarlo, copiar el contenido de `./dist` a `./libs` en otro proyecto:
+   ```shell
+   pip install .\libs\texto_analyzer-1.0.0-py3-none-any.whl
+   ```
+
 
 una vez hecho nuestro provamos nuestro codigo
 

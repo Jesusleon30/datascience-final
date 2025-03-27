@@ -33,7 +33,7 @@ def predict_texto(model, tokenizer, input_text):
     return resultado
 
 
-# ARTÍCULO de entrada
+
 ARTICLE = """
 ¿Qué es un robot?
 Un robot es una máquina diseñada para llevar a cabo una serie de tareas de manera autónoma o semiautónoma. Dependiendo de su diseño y función, los robots pueden estar equipados con sensores que les permiten interactuar con su entorno, procesadores que interpretan la información que reciben y actuadores que les permiten realizar movimientos físicos.
@@ -66,7 +66,7 @@ Conclusión
 La robótica está cambiando rápidamente el mundo en que vivimos. Si bien existen desafíos, como la pérdida de empleos y las preocupaciones éticas, los robots tienen el potencial de mejorar significativamente muchos aspectos de la vida humana. La clave estará en cómo los integremos de manera responsable en nuestra sociedad, asegurándonos de que su desarrollo beneficie a todos.
 """
 
-# Ejemplo de uso
+
 if __name__ == "__main__":
     result = predict_texto(model, tokenizer, ARTICLE)
     print("Resultado generado: ")

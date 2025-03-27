@@ -9,7 +9,7 @@ class TextoAnalyzer:
         # Ruta relativa al directorio actual
         self.model_path = os.path.join(os.path.dirname(__file__), "model")
 
-        # Cargar el tokenizer y el modelo preentrenado desde la ruta especificada
+        
         self.tokenizer = T5TokenizerFast.from_pretrained(self.model_path)
         self.model = T5ForConditionalGeneration.from_pretrained(
             self.model_path)
@@ -42,7 +42,7 @@ class TextoAnalyzer:
         return resultado
 
 
-# Ejemplo de uso
+
 if __name__ == "__main__":
     # Crear una instancia de TextoAnalyzer
     analyzer = TextoAnalyzer()
@@ -51,7 +51,7 @@ if __name__ == "__main__":
     if not hasattr(analyzer, 'tokenizer'):
         print("Error: No se pudo cargar el modelo.")
     else:
-        # Definir el texto a analizar
+        
         ARTICLE = """
              ¿Qué es un robot?
              Un robot es una máquina diseñada para llevar a cabo una serie de tareas de manera autónoma o semiautónoma. Dependiendo de su diseño y función, los robots pueden estar equipados con sensores que les permiten interactuar con su entorno, procesadores que interpretan la información que reciben y actuadores que les permiten realizar movimientos físicos.
@@ -82,14 +82,14 @@ if __name__ == "__main__":
 
             Conclusión
              La robótica está cambiando rápidamente el mundo en que vivimos. Si bien existen desafíos, como la pérdida de empleos y las preocupaciones éticas, los robots tienen el potencial de mejorar significativamente muchos aspectos de la vida humana. La clave estará en cómo los integremos de manera responsable en nuestra sociedad, asegurándonos de que su desarrollo beneficie a todos.
-        """  # Aquí puedes poner el contenido completo de tu artículo.
+        """ 
 
-        # Obtener la predicción del texto
+       
         resultado = analyzer.predict_texto(ARTICLE)
 
-        # Mostrar el resultado generado
+        
         print("Resultado generado: ")
         print(resultado)
 
-        # Imprimir la ruta del modelo cargado
+      
         print(f"Ruta del modelo cargado: {analyzer.model_path}")

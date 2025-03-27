@@ -17,4 +17,4 @@ voy a code y copio el link ssh
 
 en el git bash escrivo 
 
-git clone git@github.com:Jesusleon30/progetto_DataScience.git
+git clone git@github.com:Jesusleon30/datascience-final.git

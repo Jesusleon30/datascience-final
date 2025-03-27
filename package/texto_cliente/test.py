@@ -1,5 +1,3 @@
-# texto-client/test.py
-
 from texto_analyzer.texto_analyzer import TextoAnalyzer
 
 
@@ -39,11 +37,11 @@ ARTICLE = """
         Conclusión
         La robótica está cambiando rápidamente el mundo en que vivimos. Si bien existen desafíos, como la pérdida de empleos y las preocupaciones éticas, los robots tienen el potencial de mejorar significativamente muchos aspectos de la vida humana. La clave estará en cómo los integremos de manera responsable en nuestra sociedad, asegurándonos de que su desarrollo beneficie a todos.
 ...
-"""  # Coloca aquí el texto completo que deseas resumir
+"""  
 
-# Obtener el resumen del artículo
+
 resumen = analyzer.predict_texto(ARTICLE)
 
-# Mostrar el resumen
+
 print("Resumen del artículo:")
 print(resumen)
